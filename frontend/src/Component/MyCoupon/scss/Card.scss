@@ -1,0 +1,48 @@
+.card {
+  max-width: 13vw;
+  margin: 10px 20px;
+  height: auto;
+  .card-img-top {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+  }
+  .card-body {
+    text-align: start;
+    .card-title {
+      font-size: 1rem;
+    }
+    .card-text {
+      span {
+        font-size: 0.7rem;
+        color: rgb(105, 104, 104);
+      }
+    }
+  } 
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    max-width: 33vw;
+    margin: 10px 10px;
+    height: auto;
+    .card-img-top {
+      position: relative;
+      margin: 0 auto;
+      height: auto;
+    }
+    .card-body {
+      text-align: start;
+      .card-title {
+        font-size: 0.5rem;
+      }
+      .card-text {
+        font-size: 0.5rem;
+        span {
+          font-size: 0.7rem;
+          color: rgb(105, 104, 104);
+        }
+      }
+    } 
+  }
+}

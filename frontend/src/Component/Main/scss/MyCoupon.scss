@@ -1,0 +1,75 @@
+.mycoupon {
+  height: 100vh;
+  display: flex;
+  margin-bottom: 100px;
+  .content {
+    height: 100%;
+    margin: auto;
+    .row {
+      width: 60vw;
+      .left {
+        .content {
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          img {
+            width: 17vw;
+            height: 35vw;
+            box-shadow: 5px 5px 5px rgb(114, 114, 114);
+            margin-right: 20px;
+          }
+        }
+      }
+      .right {
+        .content {
+          justify-content: center;
+          align-items: flex-end;
+          h1 {
+            text-align: right;
+            margin-bottom: 20px;
+            font-family: 'Nanum Gothic', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mycoupon {
+    margin-bottom: 0;
+    .content {
+      .row {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80vw;
+        justify-content: flex-end;
+        .left {
+          margin-bottom: 30px;
+          .content {
+            display: block;
+              img {
+                width: 50vw;
+                height: 100vw;
+                box-shadow: 5px 5px 5px rgb(114, 114, 114);
+                margin-right: 0;
+              }
+              :first-child {
+                display: none;
+              }
+            }
+          }
+        }
+      .right {
+        .content {
+          margin-bottom: 120px;
+          align-items: center !important;
+          h1 {
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+@import "~bootstrap/scss/bootstrap";
+  .Navbar {
+    padding: 8px 15vw;
+  }
+  .NavBrand {
+    font-family: 'Anton', sans-serif;
+    h3 {
+      margin: 0.5rem;
+      font-size: 1.5rem;
+      color: #3396F4;
+    }
+  }
+  .NavLink {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    .logout {
+      padding-top: 10px;
+    }
+  }
+
+
+@media (max-width: 767.98px) {
+  .Navbar {
+    display: none !important; 
+  }
+  .MobileNavbar {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .Navbar {
+    background-color: #fff;
+  }
+  .MobileNavbar {
+    display: none !important; 
+  }
+}

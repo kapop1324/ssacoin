@@ -1,0 +1,21 @@
+.couponContainer {
+  padding: 0 10vw !important;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  .coupons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+      border: none;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px 3px rgba(189, 186, 186, 0.5);
+      &:hover {
+        transform: scale(1.05);
+        transition: 1s;
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+      }
+    }
+  }
+}

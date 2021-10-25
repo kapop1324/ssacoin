@@ -1,0 +1,44 @@
+.filterContainer {
+  margin-top: 50px;
+  border-top: solid 0.5px #b0b0b0;
+  h5 {
+    font-weight:bold;
+    min-width: 7vw;
+    text-align: left;
+    margin: 10px 10px;
+  }
+  .filter {
+    display: flex;
+    margin: 10px 0;
+    .buttons {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .active {
+        background-color: #3396F4;
+        color: #fff;
+        border: none;
+      }
+      .nonActive {
+        background-color: #fff;
+      }
+    }
+    .form {
+      border-top: solid 0.5px #b0b0b0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .filter {
+    flex-direction: column;
+    .buttons {
+      justify-content: center !important;
+      .price {
+        width: 200px;
+      }
+    }
+  }
+}

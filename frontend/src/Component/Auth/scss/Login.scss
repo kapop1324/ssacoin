@@ -1,0 +1,130 @@
+@import "./varialbe";
+@import "./mixins";
+
+.login-page{
+  position: relative;
+
+  .background{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    min-width: 1000px;
+  }
+}
+
+.login-container{
+  @include ratio(70%, 550px);
+  position: absolute;
+  margin-left: 19%;
+  margin-top: 6%;
+
+  .box{
+    text-align: left;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    
+    .logo1{
+      margin-bottom: 9%;
+      max-width: inherit;
+      height: auto !important;
+    }
+    .title{
+      display: none;
+    }
+    .form{
+      .input{
+        padding: 3%;
+        width: 100%;
+        border: 1px solid #ccc;
+        transition: 0.4s;
+      }
+      .input1{
+        margin-bottom: 8%;
+      }
+      .input2{
+        margin-bottom: 10%;
+      }
+      .label{
+        margin-bottom: 1%;
+      }
+    }
+
+    .line{
+      margin: 3% 0;
+    }
+
+    .signup{
+      width:inherit;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: 0.3s;
+      border: 0;
+      outline: 0;
+
+      &:hover{
+        color: $ssafyBlue;
+        opacity: 1;
+      }
+    }
+
+    .footer{
+      @include footer;
+      margin-top: 20%;
+    }
+  }
+}
+
+// .input ~ .focus-border:before,
+// .input ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: #4caf50; transition: 0.3s;}
+// .input ~ .focus-border:after{top: auto; bottom: 0; left: auto; right: 0;}
+// .input ~ .focus-border i:before,
+// .input ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #4caf50; transition: 0.4s;}
+// .input ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+// .input:focus ~ .focus-border:before,
+// .input:focus ~ .focus-border:after{width: 100%; transition: 0.3s;}
+// .input:focus ~ .focus-border i:before,
+// .input:focus ~ .focus-border i:after{height: 100%; transition: 0.4s;}
+
+@media (max-width: 768px) { 
+
+
+  .background{
+    display: none;
+  }
+
+  .login-container{
+    margin-left: 0%;
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-right: 10px;
+    width: 100%;
+    max-width: inherit;
+
+    .box{
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+      
+      .logo1{
+        display: none;
+      }
+      .title{
+        @include title;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 17%;
+      }
+      .footer{
+        margin-top: 50%;
+      }
+    }
+  }
+}

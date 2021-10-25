@@ -1,0 +1,174 @@
+.Modal {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width : '65vw';
+  height : '81vh';
+  border-radius: '10px'
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  margin-left: 55px;
+  margin-top: 35px;
+  font-size: 2vw;
+  font-weight: bolder;
+  color: rgb(75, 75, 75);
+}
+
+.content {
+  margin-top: 25px;
+  margin-left: 55px;
+
+  .photo {
+    width: 20vw;
+    height: 40vh;
+    border-radius: 15px;
+    border-color: rgba(119, 118, 118, 1);
+  }
+
+  .detail {
+    margin-left: 50px;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.detail {
+  .textGroup {
+    height: 35vh;
+    .item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+      font-size: 1rem;
+      align-items: center;
+    
+      .label {
+        width: 35%;
+        color: rgba(119, 118, 118, 1);
+        margin-bottom: 0;
+      }
+      .check {
+        color: rgba(119, 118, 118, 1);
+        border: solid 0.5px rgba(119, 118, 118, 1);
+        width: 85%;
+        margin: 0;
+        padding: 10px;
+      }
+      .text {
+        width: 60%;
+        font-weight: bolder;
+        margin: 0;
+      }
+      .input {
+        width: 50%;
+      }
+      .chkInput {
+        width: 3vw;
+        height: 3vh;
+      }
+      .chkLabel {
+        margin: 0;
+        color: rgba(119, 118, 118, 1);
+        width: 35%;
+      }
+      .fill {
+        color: rgb(245, 0, 0);
+      }
+      .textarea {
+        resize: none;
+      }
+    }
+  }
+  
+  .button {
+    margin-top: 30%;
+    display: flex;
+    .cancel {
+      margin-left: 40px;
+    }
+  }
+
+  .file-label {
+    position: absolute;
+    left: 16%;
+    top: 80%;
+    
+    padding: 6px 15px;
+    border-radius: 20px;
+
+    color: black;
+    border: 3px solid black;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+  .ReactModal__Content {
+    .title {
+      margin: 0 !important;
+      font-size: 6vw;
+    }
+    .content {
+      display: block;
+      margin: 0;
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 10px 0 20px 0;
+      }
+      .detail {
+        margin: 0;
+        .textGroup {
+          width: 50vw;
+          height: fit-content;
+          .item {
+            flex-direction: column;
+            .label {
+              width: 100%;
+            }
+            .text, .input {
+              width: 100%;
+            }
+            .chkInput {
+              width: 5vw;
+              height: 5vh;
+            }
+          }
+        
+        }
+        .button {
+          flex-direction: column;
+          width: 55vw;
+          justify-content: center;
+          margin-top: 0px;
+          .cancel {
+            margin: 15px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+  .groupFile{
+    display: flex;
+    justify-content: center;
+
+    .file-label {
+      position: static !important;
+      margin-bottom: 25px;
+      
+    }
+  }
+}

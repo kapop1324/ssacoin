@@ -1,0 +1,108 @@
+.market {
+  height: 100vh;
+  display: flex;
+  margin-bottom: 100px;
+  .content {
+    height: 100%;
+    margin: auto;
+    .row {
+      width: 48vw;
+      .left {
+        .content {
+          justify-content: center;
+          .top {
+            h1 {
+              margin-bottom: 20px;
+              font-family: 'Nanum Gothic', sans-serif;
+            }
+            text-align: left;
+            margin-bottom: 30px;
+          }
+          .bottom {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+              width: 14vw;
+              height: 30vw;
+              box-shadow: 5px 5px 5px rgb(114, 114, 114)
+            }
+          }
+        }
+      }
+      .right {
+        .content {
+          justify-content: center;
+          .top {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            img {
+              width: 14vw;
+              height: 30vw;
+              box-shadow: 5px 5px 5px rgb(114, 114, 114)
+            }
+          }
+          .bottom {
+            text-align: right;
+            margin-top: 30px;
+            p {
+              color: rgb(109, 107, 107);
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .market {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    .content {
+      .row {
+        width: 80vw;
+        .left {
+          .content {
+            .top {
+              text-align: center;
+            }
+            .bottom {
+              justify-content: center;
+              img {
+                width: 50vw;
+                height: 100vw;
+                box-shadow: 5px 5px 5px rgb(114, 114, 114)
+              }
+            }
+          }
+        }
+        .right {
+          .content {
+            justify-content: flex-start;
+            .top {
+              justify-content: center;
+              img {
+                display: none;
+                // width: 50vw;
+                // height: 100vw;
+                // box-shadow: 5px 5px 5px rgb(114, 114, 114)
+              }
+            }
+            .bottom {
+              margin-top: 0;
+              text-align: center;
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

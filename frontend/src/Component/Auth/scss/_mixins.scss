@@ -1,0 +1,55 @@
+// 4:3 비율
+@mixin ratio($width, $maxwidth){
+  width: $width;
+  max-width: $maxwidth;
+
+  .box{
+    width: 100%;
+    height: 0;
+    padding-bottom: 120%;
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.25);
+    background-color: white;
+  }
+}
+
+//가로 중앙 정렬
+@mixin colCenter {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//타이틀 디자인
+@mixin title {
+  font-weight: bolder;
+  font-size: xx-large;
+  color: $ssafyBlue;
+}
+
+//footer 디자인
+@mixin footer {
+  width: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .logo2{
+    margin-right: 1%;
+    margin-bottom: 8%;
+    max-width: inherit;
+    height: auto !important;
+  }
+  .content1{
+    font-weight: bold;
+    color:rgb(90, 87, 87);
+  }
+  .content2{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .content3{
+    color:rgb(148, 143, 143);
+  }
+}

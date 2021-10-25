@@ -1,0 +1,49 @@
+.text{
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    span {
+      color: #3fce32;
+    }
+  }
+  p {
+    color: rgb(109, 107, 107);
+    font-size: 1.2rem;
+  }
+}
+.foodImg{
+  display: flex;
+  justify-content: center;
+  img {
+    width: 15vw;
+    height: 15vw;
+    margin: 30px 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .shop {
+    margin-bottom: 100px;
+    .text {
+      h1 {
+        span {
+          display: block;
+          font-size: 2.5rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .foodImg {
+      // flex-direction: column;
+      // align-items: center;
+      img {
+        width: 25vw;
+        height: 25vw;
+        margin: 50px 10px;
+      }
+    }
+  }
+}

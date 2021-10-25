@@ -1,0 +1,56 @@
+.suggestContainer {
+  padding: 0 10vw !important;
+  .text {
+    text-align: start;
+    h5 {
+      font-family: 'Nanum Gothic', sans-serif;
+      margin: 3vw 0;
+    }
+  }
+  .shopCarousel {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 30vh;
+    img {
+      filter: brightness(70%);
+      height: 30vh;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .suggestContainer {
+    padding: 0 10vw !important;
+    .text {
+      text-align: start;
+      h5 {
+        font-size: 1rem;
+        margin: 6vw 0;
+      }
+    }
+    .shopCarousel {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      height: 20vh;
+      .carousel-indicators{
+        display: none;
+      }
+      .carousel-caption {
+        padding: 0;
+      }
+      img {
+        filter: brightness(70%);
+        height: 20vh;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

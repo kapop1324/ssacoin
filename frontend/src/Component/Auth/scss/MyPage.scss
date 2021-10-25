@@ -1,0 +1,26 @@
+.mypage{
+  .container{
+    .dataSelect{
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 768px) { 
+  .mypage{
+    .container{
+      .dataSelect{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }  
+}
