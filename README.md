@@ -195,7 +195,7 @@ Java에서 블록체인 네트워크에 접속할 수 있는 라이브러리
 ## 메인 컬러
 
 
-#### ![UserThread](img/1.PNG)
+#### ![UserThread](img/1.png)
 
 싸피 홈페이지([edu.ssafy.com](http://edu.ssafy.com/))를 바탕으로 메인 컬러 지정.
 
@@ -211,7 +211,7 @@ Java에서 블록체인 네트워크에 접속할 수 있는 라이브러리
 > Figma - WireFrame
 > 
 
-#### ![UserThread](img/2.PNG)
+#### ![UserThread](img/2.png)
 
 
 [https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3HQdkeSSiXptyXSsBoVh6Q%2F%ED%8A%B9%ED%99%94-PJT-Front%3Fnode-id%3D0%253A1](https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3HQdkeSSiXptyXSsBoVh6Q%2F%ED%8A%B9%ED%99%94-PJT-Front%3Fnode-id%3D0%253A1)
@@ -227,19 +227,19 @@ Java에서 블록체인 네트워크에 접속할 수 있는 라이브러리
 > API
 > 
 
-#### ![UserThread](img/3.PNG)
+#### ![UserThread](img/3.png)
 
 
 > Component
 > 
 
-#### ![UserThread](img/4.PNG)
+#### ![UserThread](img/4.png)
 
 > Redux
 > 
 
-#### ![UserThread](img/5.PNG)
+#### ![UserThread](img/5.png)
 
 ## 📚 배포 구조
 
-#### ![UserThread](img/6.PNG)
+#### ![UserThread](img/6.png)
